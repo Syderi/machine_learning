@@ -1,44 +1,336 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1
-					<h2>Моя первая презентация</h2>
-					<img src="examples/assets/1.jpg" alt="first slide">
-				</section>
-				<section>Slide 2</section>
-				<section>Slide 3</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          Slide 1
+          <h3>Machine learning</h3>
+          <p>Presentation</p>
+          <p style="font-size: 20px">prepared by Eugeniy Kuzmin @Syderi</p>
+          <p>Let's start</p>
+          <img src="examples/assets/1.jpg" alt="first image" />
+        </section>
+        <section>
+          Slide 2
+          <h5>Что такое машинное обучение?</h5>
+          <p style="font-size: 30px">
+            Машинное обучение считается ветвью искусственного интеллекта,
+            основная идея которого заключается в том, чтобы компьютер не просто
+            использовал заранее написанный алгоритм, а сам обучился решению
+            поставленной задачи
+          </p>
+        </section>
+        <section>
+          Slide 3
+          <h5>Кто обучает машину?</h5>
+          <p style="font-size: 30px">
+            Может быть мы? Может быть вы? Оба ответа неверны. Машина обучается
+            на данных! Они называются обучающей выборкой.
+          </p>
+          <p style="font-size: 30px" class="fragment" data-fragment-index="1">
+            • На практике фаза обучения может предшествовать фазе работы
+            алгоритма (например, детектирование лиц на фотокамере)
+          </p>
+          <p style="font-size: 30px" class="fragment" data-fragment-index="2">
+            • Но возможно и дообучение в процессе функционирования алгоритма
+            (например, определение спама).
+          </p>
+        </section>
+        <section>
+          Slide 4
+          <h5>Application areas</h5>
+          <p style="font-size: 30px">• Computer vision</p>
+          <img
+            class="fragment"
+            src="examples/assets/2.jpg"
+            width="350"
+            height="250"
+            alt="second image"
+          />
+          <img
+            class="fragment"
+            src="examples/assets/3.jpg"
+            width="350"
+            height="250"
+            alt="third image"
+          />
+        </section>
+        <section>
+          Slide 5
+          <h5>Application areas</h5>
+          <p style="font-size: 15px">continuation</p>
+          <p style="font-size: 30px">• Speech recognition</p>
+          <p style="font-size: 30px">
+            • Computational Linguistics and Natural Language Processing
+          </p>
+          <img
+            class="fragment"
+            src="examples/assets/4.png"
+            width="400"
+            height="240"
+            alt="fourth image"
+          />
+          <p class="fragment" style="font-size: 30px">• Medical diagnostics</p>
+        </section>
+        <section>
+          Slide 6
+          <h5>Application areas</h5>
+          <p style="font-size: 15px">continuation</p>
+          <p class="fragment" style="font-size: 30px">• Bioinformatics</p>
+          <p class="fragment" style="font-size: 30px">
+            • Technical diagnostics
+          </p>
+          <p class="fragment" style="font-size: 30px">
+            • Financial applications
+          </p>
+          <p class="fragment" style="font-size: 30px">• Mind games</p>
+          <p class="fragment" style="font-size: 30px">• Big Data</p>
+          <p class="fragment" style="font-size: 30px">
+            • Artificial Intelligence
+          </p>
+          <p class="fragment" style="font-size: 30px">• ...</p>
+        </section>
+        <section>
+          Slide 7
+          <h3>machine learning methods</h3>
+          <h5>Supervised learning</h5>
+          <p style="font-size: 30px">
+            Один из разделов машинного обучения. Имеется множество объектов
+            (ситуаций) и множество возможных ответов (откликов, реакций).
+            Существует некоторая зависимость между ответами и объектами, но она
+            неизвестна. Известна только конечная совокупность прецедентов — пар
+            «объект, ответ», называемая обучающей выборкой. На основе этих
+            данных требуется восстановить зависимость, то есть построить
+            алгоритм, способный для любого объекта выдать достаточно точный
+            ответ. Для измерения точности ответов определённым образом вводится
+            функционал качества. Под учителем понимается либо сама обучающая
+            выборка, либо тот, кто указал на заданных объектах правильные
+            ответы.
+          </p>
+        </section>
+        <section>
+          Slide 8
+          <h3>machine learning methods</h3>
+          <h5>Unsupervised learning</h5>
+          <p style="font-size: 30px">
+            Один из разделов машинного обучения . Изучает широкий класс задач
+            обработки данных, в которых известны только описания множества
+            объектов (обучающей выборки), и требуется обнаружить внутренние
+            взаимосвязи, зависимости, закономерности, существующие между
+            объектами.
+          </p>
+        </section>
+        <section>
+          Slide 9
+          <h5>Neural network</h5>
+          <p style="font-size: 20px">
+            Это последовательность нейронов, соединенных между собой синапсами.
+            Структура нейронной сети пришла в мир программирования прямиком из
+            биологии. Благодаря такой структуре, машина обретает способность
+            анализировать и даже запоминать различную информацию. Нейронные сети
+            также способны не только анализировать входящую информацию, но и
+            воспроизводить ее из своей памяти. Другими словами, нейросеть это
+            машинная интерпретация мозга человека, в котором находятся миллионы
+            нейронов передающих информацию в виде электрических импульсов.
+            Фактически же, нейрон в искусственной нейронной сети представляет
+            собой математическую функцию которой на вход приходит какое-то
+            значение и на выходе получается значение, полученное с помощью той
+            самой математической функции.
+          </p>
+          <img
+            src="examples/assets/5.jpg"
+            width="400"
+            height="240"
+            alt="five image"
+          />
+        </section>
+        <section>
+          Slide 10
+          <h5>Support Vector Machines</h5>
+          <p style="font-size: 20px">
+            SVM — это линейный алгоритм используемый в задачах классификации и
+            регрессии. Данный алгоритм имеет широкое применение на практике и
+            может решать как линейные так и нелинейные задачи. Суть работы
+            “Машин” Опорных Векторов проста: алгоритм создает линию или
+            гиперплоскость, которая разделяет данные на классы.
+          </p>
+          <img
+            src="examples/assets/6.png"
+            width="300"
+            height="265"
+            alt="six image"
+          />
+        </section>
+        <section>
+          Slide 11
+          <h5>Boosting</h5>
+          <p style="font-size: 20px">
+            Процедура последовательного построения композиции алгоритмов
+            машинного обучения, когда каждый следующий алгоритм стремится
+            компенсировать недостатки композиции всех предыдущих алгоритмов. В
+            течение последних 10 лет бустинг остаётся одним из наиболее
+            популярных методов машинного обучения. Основные причины — простота,
+            универсальность, гибкость (возможность построения различных
+            модификаций), и, главное, высокая обобщающая способность.
+          </p>
+          <img
+            src="examples/assets/7.png"
+            width="300"
+            height="265"
+            alt="seven image"
+          />
+        </section>
+        <section>
+          Slide 12
+          <h5>machine learning tasks</h5>
+          <p style="font-size: 20px">
+            - Regressions, Classifications, Clusterings
+          </p>
+          <p style="font-size: 20px">
+            - Dimension reduction, Anomaly detection
+          </p>
+          <img
+            src="examples/assets/8.png"
+            width="576"
+            height="411"
+            alt="eigth image"
+          />
+        </section>
+        <section>
+          Slide 13
+          <h5>Regressions</h5>
+          <p style="font-size: 20px">
+            Параметры модели настраиваются таким образом, что модель наилучшим
+            образом приближает данные.
+          </p>
+          <img
+            src="examples/assets/9.png"
+            width="576"
+            height="411"
+            alt="nine image"
+          />
+        </section>
+        <section>
+          Slide 14
+          <h5>Classifications</h5>
+          <p style="font-size: 20px">
+            Требуется построить алгоритм, способный классифицировать
+            произвольный объект из исходного множества.
+          </p>
+          <img
+            src="examples/assets/10.png"
+            width="576"
+            height="411"
+            alt="ten image"
+          />
+        </section>
+        <section>
+          Slide 15
+          <h5>Clusterings</h5>
+          <p style="font-size: 20px">
+            Задача разбиения заданной выборки объектов (ситуаций) на
+            непересекающиеся подмножества, называемые кластерами, так, чтобы
+            каждый кластер состоял из схожих объектов, а объекты разных
+            кластеров существенно отличались.
+          </p>
+          <img
+            src="examples/assets/20.png"
+            width="509"
+            height="250"
+            alt="image"
+          />
+        </section>
+        <section>
+          Slide 16
+          <h5>Dimension reduction</h5>
+          <p style="font-size: 20px">
+            Позволяет уменьшить размерность данных, потеряв наименьшее
+            количество информации. Применяется во многих областях, таких как
+            распознавание объектов, компьютерное зрение, сжатие данных и т. п.
+            Вычисление главных компонент сводится к вычислению собственных
+            векторов и собственных значений ковариационной матрицы исходных
+            данных или к сингулярному разложению матрицы данных.
+          </p>
+          <img
+            src="examples/assets/11.png"
+            width="448"
+            height="199"
+            alt="ten image"
+          />
+        </section>
+        <section>
+          Slide 17
+          <h5>Anomaly detection</h5>
+          <p style="font-size: 20px">
+            В анализе данных есть два направления, которые занимаются поиском
+            аномалий: детектирование выбросов и «новизны». Как и выброс «новый
+            объект» — это объект, который отличается по своим свойствам от
+            объектов (обучающей) выборки. Но в отличие от выброса, его в самой
+            выборке пока нет (он появится через некоторое время, и задача как
+            раз и заключается в том, чтобы обнаружить его при появлении).
+            Например, если вы анализируете замеры температуры и отбрасываете
+            аномально большие или маленькие, то Вы боретесь с выбросами. А если
+            Вы создаёте алгоритм, который для каждого нового замера оценивает,
+            насколько он похож на прошлые, и выбрасывает аномальные — Вы
+            «боретесь с новизной».
+          </p>
+          <img
+            src="examples/assets/30.jpeg"
+            width="700"
+            height="350"
+            alt="image"
+          />
+        </section>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+        <section>
+          End of Presentation
+          <p style="font-size: 20px">thank you, all goodbye</p>
+          <a
+            style="display: block"
+            href="https://github.com/Syderi/machine_learning"
+            >Syderi github</a
+          >
+          <img
+            src="examples/assets/end.jpg"
+            width="400"
+            height="400"
+            alt="seven image"
+          />
+        </section>
+      </div>
+    </div>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
