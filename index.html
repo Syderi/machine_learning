@@ -1,44 +1,127 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1
-					<h2>Моя первая презентация</h2>
-					<img src="examples/assets/1.jpg" alt="first slide">
-				</section>
-				<section>Slide 2</section>
-				<section>Slide 3</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          Slide 1
+          <h3>Machine learning</h3>
+          <p>Presentation</p>
+          <p style="font-size: 20px">prepared by Eugeniy Kuzmin @Syderi</p>
+          <p>Let's start</p>
+          <img src="examples/assets/1.jpg" alt="first image" />
+        </section>
+        <section>
+          Slide 2
+          <h5>Что такое машинное обучение?</h5>
+          <p style="font-size: 30px">
+            Машинное обучение считается ветвью искусственного интеллекта,
+            основная идея которого заключается в том, чтобы компьютер не просто
+            использовал заранее написанный алгоритм, а сам обучился решению
+            поставленной задачи
+          </p>
+        </section>
+        <section>
+          Slide 3
+          <h5>Кто обучает машину?</h5>
+          <p style="font-size: 30px">
+            Может быть мы? Может быть вы? Оба ответа неверны. Машина обучается
+            на данных! Они называются обучающей выборкой.
+          </p>
+          <p style="font-size: 30px" class="fragment" data-fragment-index="1">
+            • На практике фаза обучения может предшествовать фазе работы
+            алгоритма (например, детектирование лиц на фотокамере)
+          </p>
+          <p style="font-size: 30px" class="fragment" data-fragment-index="2">
+            • Но возможно и дообучение в процессе функционирования алгоритма
+            (например, определение спама).
+          </p>
+        </section>
+        <section>
+          Slide 4
+          <h5>Application areas</h5>
+          <p style="font-size: 30px">• Computer vision</p>
+          <img
+            class="fragment"
+            src="examples/assets/2.jpg"
+            width="350"
+            height="250"
+            alt="second image"
+          />
+          <img
+            class="fragment"
+            src="examples/assets/3.jpg"
+            width="350"
+            height="250"
+            alt="third image"
+          />
+        </section>
+        <section>
+          Slide 5
+          <h5>Application areas</h5>
+          <p style="font-size: 15px">continuation</p>
+          <p style="font-size: 30px">• Speech recognition</p>
+          <p style="font-size: 30px">
+            • Computational Linguistics and Natural Language Processing
+          </p>
+          <img
+            class="fragment"
+            src="examples/assets/4.png"
+            width="400"
+            height="240"
+            alt="fourth image"
+          />
+          <p class="fragment" style="font-size: 30px">• Medical diagnostics</p>
+        </section>
+        <section>
+          Slide 6
+          <h5>Application areas</h5>
+          <p style="font-size: 15px">continuation</p>
+          <p class="fragment" style="font-size: 30px">• Bioinformatics</p>
+          <p class="fragment" style="font-size: 30px">
+            • Technical diagnostics
+          </p>
+          <p class="fragment" style="font-size: 30px">
+            • Financial applications
+          </p>
+          <p class="fragment" style="font-size: 30px">• Mind games</p>
+          <p class="fragment" style="font-size: 30px">• Big Data</p>
+          <p class="fragment" style="font-size: 30px">• Artificial Intelligence</p>
+          <p class="fragment" style="font-size: 30px">• ...</p>
+        </section>
+      </div>
+    </div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
